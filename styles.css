@@ -8,7 +8,7 @@
 
 .banner-container {
     display: flex;
-    margin: 120px auto 60px;
+    margin: 100px auto 60px;
     justify-content: space-around;
     align-items: center;
     background-color: #C6E4D6;
@@ -46,13 +46,15 @@
 }
 
 .vision-container,
-.news-container {
+.news-container,
+.donation-container {
     margin: 0 auto;
     max-width: 1280px;
 }
 
 .vision-header,
-.news-header {
+.news-header,
+.donation-header {
     color: rgb(14, 14, 14);
     font-size: 40px;
     font-weight: 700;
@@ -60,7 +62,8 @@
 }
 
 .vision-text,
-.news-text {
+.news-text,
+.donation-text {
     color: rgba(14, 14, 14, 0.7);
     font-size: 16px;
     font-weight: 400;
@@ -135,7 +138,7 @@
 .news-card-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 24px;
     margin-top: 30px;
@@ -145,10 +148,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 20px;
-    border: 1px solid yellow;
+    gap: 32px;
+    border: 1px solid rgba(235, 228, 228, 0.822);
     border-radius: 15px;
-    padding: 20px 40px;
+    box-shadow: 8px 4px rgba(245, 245, 245, 0.863);
+    padding: 48px;
 }
 
 .read {
@@ -156,4 +160,74 @@
     background: rgb(0, 106, 80);
     margin: 15px 0;
     padding: 10px 20px;
+}
+
+.news-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.news-timeline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-title {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-des,
+.news-timeline {
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.card-image img {
+    border-radius: 24px;
+}
+
+.donation-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.donation-card {
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(235, 228, 228, 0.822);
+    box-shadow: 8px 4px rgba(245, 245, 245, 0.664);
+}
+
+.amount {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.donation-input {
+    border: 1px solid rgba(235, 228, 228, 0.822);
+    box-shadow: 8px 4px rgba(245, 245, 245, 0.664);
+    padding: 20px 40px;
+    margin: 32px 16px;
+}
+
+.input-field {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    outline: none;
 }
