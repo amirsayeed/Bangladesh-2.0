@@ -6,9 +6,37 @@
     font-family: "Fira Sans", serif;
 }
 
+header {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-title {
+    color: rgb(14, 14, 14);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.nav-button {
+    color: rgb(0, 106, 80);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 106, 80);
+    border-radius: 8px;
+}
+
 .banner-container {
     display: flex;
-    margin: 100px auto 60px;
+    margin: 25px auto 60px;
     justify-content: space-around;
     align-items: center;
     background-color: #C6E4D6;
@@ -43,18 +71,26 @@
     padding: 10px 15px;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .vision-container,
 .news-container,
 .donation-container {
-    margin: 0 auto;
-    max-width: 1280px;
+    margin: 80px auto;
 }
 
 .vision-header,
 .news-header,
-.donation-header {
+.donation-header,
+.subscribe-header {
     color: rgb(14, 14, 14);
     font-size: 40px;
     font-weight: 700;
@@ -63,42 +99,50 @@
 
 .vision-text,
 .news-text,
-.donation-text {
+.donation-text,
+.subscribe-text {
     color: rgba(14, 14, 14, 0.7);
     font-size: 16px;
     font-weight: 400;
 }
 
 .vision-card-container {
-    margin-top: 30px;
+    margin: 30px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 24px;
+    max-height: 325px;
 }
 
 .vision-card1 {
     box-sizing: border-box;
     border-radius: 16px;
     background: rgba(84, 144, 245, 0.2);
-    padding: 30px;
+    padding: 32px;
     text-align: left;
+    height: 325px;
+    width: 410px;
 }
 
 .vision-card2 {
     box-sizing: border-box;
     border-radius: 16px;
     background: rgb(198, 228, 214);
-    padding: 30px;
+    padding: 32px;
     text-align: left;
+    height: 325px;
+    width: 410px;
 }
 
 .vision-card3 {
     box-sizing: border-box;
     border-radius: 16px;
     background: rgb(247, 235, 207);
-    padding: 30px;
-    text-align: justify;
+    padding: 32px;
+    text-align: left;
+    height: 325px;
+    width: 410px;
 }
 
 .vision-name {
@@ -112,27 +156,77 @@
     color: rgba(14, 14, 14, 0.7);
     font-size: 16px;
     font-weight: 400;
+    margin: 12px 0;
 }
 
 .learn1 {
     border-radius: 8px;
     background: rgb(84, 144, 245);
-    margin: 15px 0 0;
+    margin: 24px 0;
     padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
 }
 
 .learn2 {
     border-radius: 8px;
     background: rgb(9, 161, 92);
-    margin: 15px 0 0;
+    margin: 24px 0;
     padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
 }
 
 .learn3 {
     border-radius: 8px;
     background: rgb(255, 194, 57);
-    margin: 15px 0;
+    margin: 24px 0;
     padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+}
+
+.vision-quote {
+    padding: 48px 24px;
+    background-image: url('./assets/quote-bg.png');
+    background-position: top 20px left 25px;
+    background-repeat: no-repeat;
+    box-shadow: 8px 4px rgba(245, 245, 245, 0.863);
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+}
+
+.quote {
+    margin: 0 0 10px;
+    text-align: justify;
+}
+
+.quote p {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.quote-author {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.author-designation {
+    color: rgba(14, 14, 14, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 4px 0;
 }
 
 .news-card-container {
@@ -160,6 +254,11 @@
     background: rgb(0, 106, 80);
     margin: 15px 0;
     padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+
 }
 
 .news-description {
@@ -230,4 +329,72 @@
     text-align: center;
     border: none;
     outline: none;
+}
+
+.donation-button {
+    text-align: center;
+    cursor: pointer;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 80px 100px;
+    text-align: center;
+    border-radius: 24px;
+    background: rgb(198, 228, 214);
+    margin: 80px 0;
+}
+
+.subscribe-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    width: 750px;
+}
+
+.subscribe-input-box {
+    padding: 18px 40px;
+    border-radius: 8px 0px 0px 8px;
+    background: rgb(255, 255, 255);
+    width: 600px;
+}
+
+.subscribe-input {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: rgba(14, 14, 14, 0.3);
+}
+
+.subscribe-button {
+    border-radius: 0px 8px 8px 0px;
+    background: rgb(0, 106, 80);
+    padding: 18px 40px;
+    color: white;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(255, 0, 0, 0.918);
+}
+
+.box:hover,
+.box2:hover {
+    background-color: #2ec7cc;
+}
+
+.box2 {
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgb(198, 228, 214);
 }
