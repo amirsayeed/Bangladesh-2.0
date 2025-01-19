@@ -47,8 +47,7 @@ header {
 }
 
 .banner-image img {
-    width: 475px;
-    height: 400px;
+    width: 100%;
 }
 
 .banner-header {
@@ -121,8 +120,8 @@ main {
     background: rgba(84, 144, 245, 0.2);
     padding: 32px;
     text-align: left;
-    height: 325px;
-    width: 410px;
+    max-height: 325px;
+    max-width: 410px;
 }
 
 .vision-card2 {
@@ -131,8 +130,8 @@ main {
     background: rgb(198, 228, 214);
     padding: 32px;
     text-align: left;
-    height: 325px;
-    width: 410px;
+    max-height: 325px;
+    max-width: 410px;
 }
 
 .vision-card3 {
@@ -141,8 +140,8 @@ main {
     background: rgb(247, 235, 207);
     padding: 32px;
     text-align: left;
-    height: 325px;
-    width: 410px;
+    max-height: 325px;
+    max-width: 410px;
 }
 
 .vision-name {
@@ -362,7 +361,7 @@ main {
     padding: 18px 40px;
     border-radius: 8px 0px 0px 8px;
     background: rgb(255, 255, 255);
-    width: 600px;
+    max-width: 600px;
 }
 
 .subscribe-input {
@@ -397,4 +396,16 @@ main {
     box-sizing: border-box;
     border: 1px solid rgba(14, 14, 14, 0.15);
     background: rgb(198, 228, 214);
+}
+
+
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .banner-container,
+    .news-card,
+    .vision-card-container,
+    .donation-card-container {
+        flex-direction: column;
+    }
 }
